@@ -1,6 +1,4 @@
-﻿using HotelListing.API.Data;
-
-namespace HotelListing.API.Contracts
+﻿namespace HotelListing.API.Contracts
 {
     public interface IGenericRepository<T> where T : class
     {
@@ -15,10 +13,5 @@ namespace HotelListing.API.Contracts
         Task DeleteAsync(int? id);
 
         Task<bool> Exists(int id);
-    }
-
-    public interface IHotelsRepository : IGenericRepository<Hotel>
-    {
-
     }
 }
